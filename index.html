@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <script src= "moment.js" ></script>
-    <script src= script.js ></script>
-    <script>
-      console.log(moment());
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <h2 id="dateTime">Date Goes Here</h2>
-      <p id="currentDay" class="lead">Date can go here too</p>
-    </header>
-    <div class="container">
-      <div class="timeBlocks">0500<textarea class="timeBlockTextArea" placeholder="Record you day's events here!"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0600<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0700<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0800<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0900<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1000<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1100<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1200<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1300<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1400<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1500<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1600<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1700<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1800<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">1900<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">2000<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">2100<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">2200<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">2300<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0000<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0100<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0200<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0300<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      <div class="timeBlocks">0400<textarea class="timeBlockTextArea"></textarea><button class="saveEvent">Save</button></div>
-      
-    </div>
+<body>
+  <script src="moment.js"></script>
+  <script>
+    console.log(moment());
+  </script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead">Date can go here too</p>
+  </header>
+  <div class="container">
+    <div class="timeBlocks">0900<textarea class="timeBlockTextArea" id="9"
+        placeholder="Record you day's events here!"></textarea><button class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1000<textarea class="timeBlockTextArea" id="10"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1100<textarea class="timeBlockTextArea" id="11"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1200<textarea class="timeBlockTextArea" id="12"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1300<textarea class="timeBlockTextArea" id="13"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1400<textarea class="timeBlockTextArea" id="14"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1500<textarea class="timeBlockTextArea" id="15"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1600<textarea class="timeBlockTextArea" id="16"></textarea><button
+        class="saveEvent">Save</button></div>
+    <div class="timeBlocks">1700<textarea class="timeBlockTextArea" id="17"></textarea><button
+        class="saveEvent">Save</button></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
